@@ -56,7 +56,9 @@ namespace ConsoleApp1
 
             StreamWriter planWriter = new StreamWriter("YourPlan.txt");
             planWriter.WriteLine("|      Mon      |      Tue      |      Wed      |      Thu      |      Fri      |      Sat      |      Sun      |");
-            planWriter.Write("|");
+            if (week > 1)
+                planWriter.Write("|");
+
             for (int i = 0; i < week-1; i++)
                 planWriter.Write("---------------|");
 

@@ -73,7 +73,7 @@ namespace ConsoleApp1
 
                 thatTime = Convert.ToDateTime(fileRead1.ReadLine().Substring(0, 18));
 
-                planWriter.Write(" {0}.{1}-{2}\t|", thatTime.Day, thatTime.Month, todayTask);
+                planWriter.Write(" {0,2}.{1,2} - {2}\t|", thatTime.Day, thatTime.Month, todayTask);
 
                 if (week == 7)
                 {
